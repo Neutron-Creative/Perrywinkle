@@ -1,0 +1,19 @@
+'use strict';
+
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var concat = require('gulp-concat');
+
+
+gulp.task('sass', function () {
+  return gulp.src('./assets/src/sass/**/*.sass')
+    .pipe(sass({indentedSyntax: true}).on('error', sass.logError))
+	.pipe(concat('all.css'))
+    .pipe(gulp.dest('./assets/build/css'));
+});
+
+gulp.task('watch', function () {
+  gulp.watch('./assets/src/sass/**/*.sass', ['sass']);
+});
+
+gulp.task('default', ['sass', 'watch']);

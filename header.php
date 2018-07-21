@@ -6,8 +6,16 @@
 	</head>
 	<body>
 		<nav>
-			<div class="brand">
-				<?php the_custom_logo(); ?>
-				<?php bloginfo( 'name' ); ?>
-			</div>
+			<a class="brand" href="/">
+				<?php
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+					if($image[0]) echo "<img src='" . $image[0] . "'/>";
+					bloginfo( 'name' );
+				?>
+			</a>
+			<ul>
+
+			</ul>
 		</nav>
+		<?php wp_head(); ?>

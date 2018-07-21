@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Neutron-Creative/perrywinkle/issues"
   },
-  "homepage": "https://github.com/Neutron-Creative/perrywinkle#readme"
+  "homepage": "https://github.com/Neutron-Creative/perrywinkle#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1"
+  }
 }
