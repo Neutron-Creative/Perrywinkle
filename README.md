@@ -1,6 +1,6 @@
 ![Perrywinkle 🐩](banner.png?raw=true)
 
-*Perrywinkle 🐩* is a robust, flexible, and easy-to-use theme for the [Wordpress](https://wordpress.org) platform.
+*Perrywinkle 🐩* is a robust, flexible, and easy-to-use theme for the [WordPress](https://wordpress.org) platform.
 Built with scalability and client-use in mind, we aim to provide a leaner alternative to the [Storefront](https://github.com/woocommerce/storefront) theme.
 
 ## Roadmap
