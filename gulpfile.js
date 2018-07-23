@@ -6,9 +6,9 @@ var concat = require('gulp-concat');
 
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/src/sass/**/*.sass')
+  return gulp.src(['./assets/src/sass/palette.sass', './assets/src/sass/**/*.sass'])
+  	.pipe(concat('all.sass'))
     .pipe(sass({indentedSyntax: true}).on('error', sass.logError))
-	.pipe(concat('all.css'))
     .pipe(gulp.dest('./assets/build/css'));
 });
 

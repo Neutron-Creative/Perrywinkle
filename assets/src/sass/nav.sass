@@ -11,7 +11,7 @@ nav
 		vertical-align: top
 	a.brand
 		line-height: inherit
-		widows: auto
+		width: auto
 		height: 100%
 		font-size: 24px
 		text-decoration: none
@@ -23,8 +23,16 @@ nav
 			margin-right: 20px
 	ul
 		display: inline-block
-
+		margin: 0
+		padding: 0
 		&.right
 			float: right
 		li
+			display: inline-block
 			font-size: 14px
+			margin: 0
+			padding: 0 10px
+			color: rgba(0,0,0,.75)
+			a
+				text-decoration: none
+				color: inherit

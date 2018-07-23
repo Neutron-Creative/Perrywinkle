@@ -6,6 +6,11 @@ html, body {
   padding: 0;
   background: #eee; }
 
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1140px; }
+
 nav {
   display: block;
   width: 100%;
@@ -19,7 +24,7 @@ nav {
     vertical-align: top; }
   nav a.brand {
     line-height: inherit;
-    widows: auto;
+    width: auto;
     height: 100%;
     font-size: 24px;
     text-decoration: none;
@@ -30,9 +35,18 @@ nav {
       width: auto;
       margin-right: 20px; }
   nav ul {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
     nav ul.right {
       float: right; }
     nav ul li {
-      font-size: 14px; }
+      display: inline-block;
+      font-size: 14px;
+      margin: 0;
+      padding: 0 10px;
+      color: rgba(0, 0, 0, 0.75); }
+      nav ul li a {
+        text-decoration: none;
+        color: inherit; }
 

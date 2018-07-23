@@ -6,16 +6,22 @@
 	</head>
 	<body>
 		<nav>
-			<a class="brand" href="/">
+			<div class="container">
+				<a class="brand" href="/">
+					<?php
+						$custom_logo_id = get_theme_mod( 'custom_logo' );
+						$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+						if($image[0]) echo "<img src='" . $image[0] . "'/>";
+						bloginfo( 'name' );
+					?>
+				</a>
 				<?php
-					$custom_logo_id = get_theme_mod( 'custom_logo' );
-					$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-					if($image[0]) echo "<img src='" . $image[0] . "'/>";
-					bloginfo( 'name' );
+					wp_nav_menu(
+						array(
+							'menu' => 'Header Menu'
+						)
+					);
 				?>
-			</a>
-			<ul>
-
-			</ul>
+			</div>
 		</nav>
 		<?php wp_head(); ?>
