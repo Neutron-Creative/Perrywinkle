@@ -11,6 +11,12 @@ html, body {
   margin: 0 auto;
   max-width: 1140px; }
 
+.full-width {
+  position: absolute;
+    position-width: 100vw;
+    position-left: 0;
+    position-right: 0; }
+
 nav {
   display: block;
   width: 100%;
